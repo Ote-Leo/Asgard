@@ -23,5 +23,5 @@ name = "c_typ"
 version = "0.1.0"
 
 [[package]]
-name = "dyn_error"
+name = "greetings"
 version = "0.1.0"
