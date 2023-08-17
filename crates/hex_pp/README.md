@@ -12,7 +12,7 @@ A library providing a pretty hex print functionality.
 Input
 
 ```rust
-use pretty_hex::*;
+use hex_pp::*;
 
 let v = vec![222, 173, 190, 239, 202, 254, 32, 24];
 assert_eq!(simple_hex(&v), format!("{}", v.hex_dump()));
@@ -31,7 +31,7 @@ de ad be ef  ca fe 20 18
 Input
 
 ```rust
-use pretty_hex::*;
+use hex_pp::*;
 
 let v: &[u8] = &random::<[u8;30]>();
 assert_eq!(pretty_hex(&v), format!("{:?}", v.hex_dump()));
@@ -52,7 +52,7 @@ Length: 30 (0x1e) bytes
 Input
 
 ```rust
-use pretty_hex::*;
+use hex_pp::*;
 
 let cfg = HexConfig {title: false, width: 8, group: 0, ..HexConfig::default() };
 
