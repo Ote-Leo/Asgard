@@ -14,3 +14,6 @@ categories = [
 keywords = ["logging", "hex", "dump", "binary"]
 readme = "README.md"
 license-file = "LICENSE.txt"
+
+homepage = "https://github.com/Ote-Leo/Asgard/tree/master/crates/hex_pp"
+repository = "https://github.com/Ote-Leo/Asgard"
