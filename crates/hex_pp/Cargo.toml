@@ -1,6 +1,6 @@
 [package]
 name = "hex_pp"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Ote Leo <ote.leo73@gmail.com>"]
 description = "Pretty hex dump of bytes slice in the common style."
@@ -13,7 +13,7 @@ categories = [
 
 keywords = ["logging", "hex", "dump", "binary"]
 readme = "README.md"
-license-file = "LICENSE.txt"
+license = "MIT"
 
 homepage = "https://github.com/Ote-Leo/Asgard/tree/master/crates/hex_pp"
 repository = "https://github.com/Ote-Leo/Asgard"
