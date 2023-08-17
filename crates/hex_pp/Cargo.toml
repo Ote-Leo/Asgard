@@ -1,6 +1,6 @@
 [package]
 name = "hex_pp"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Ote Leo <ote.leo73@gmail.com>"]
 description = "Pretty hex dump of bytes slice in the common style."
