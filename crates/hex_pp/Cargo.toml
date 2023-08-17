@@ -1,0 +1,16 @@
+[package]
+name = "hex_pp"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ote Leo <ote.leo73@gmail.com>"]
+description = "Pretty hex dump of bytes slice in the common style."
+categories = [
+    "development-tools::debugging",
+    "command-line-utilities",
+    "no-std::no-alloc",
+    "no-std",
+]
+
+keywords = ["logging", "hex", "dump", "binary"]
+readme = "README.md"
+license-file = "LICENSE.txt"
