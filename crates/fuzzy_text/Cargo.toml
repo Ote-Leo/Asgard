@@ -1,0 +1,11 @@
+[package]
+name = "fuzzy_text"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ote Leo <ote.leo73@gmail.com>"]
+description = "Vladimir Levenshtein's edit distance algorithm as a Rust library."
+readme = "README.md"
+license = "MIT"
+
+categories = ["algorithms"]
+keywords = ["Levenshtein", "algorithm", "edit", "distance"]
