@@ -9,3 +9,10 @@ license = "MIT"
 
 categories = ["algorithms"]
 keywords = ["Levenshtein", "algorithm", "edit", "distance"]
+
+[dev-dependencies]
+criterion ={ version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "levenshtein_benchmark"
+harness = false
