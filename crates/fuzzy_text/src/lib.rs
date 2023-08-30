@@ -63,18 +63,15 @@ mod tests {
             ("gattaca", "tataa"),
             ("attaca", "tataa"),
             ("bullfrog", "frogger"),
+            ("levenshtein", "levenshtein"),
         ];
-        let outputs = [6, 2, 2, 2, 3, 3, 7];
+        let outputs = [6, 2, 2, 2, 3, 3, 7, 0];
 
         for ((a, b), output) in inputs.iter().zip(outputs) {
             assert_eq!(levenshtein_distance(a, b), output);
         }
     }
 
-    #[test]
-    fn equal_long_test() {
-        assert_eq!(levenshtein_distance("levenshtein", "levenshtein"), 0);
-    }
 
     #[test]
     fn case_sensitive_test() {
