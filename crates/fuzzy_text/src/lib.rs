@@ -1,7 +1,7 @@
 pub fn levenshtein_distance(a: &str, b: &str) -> usize {
     match (a, b) {
-        ("", b) => b.len(),
-        (a, "") => a.len(),
+        ("", b) => b.chars().count(),
+        (a, "") => a.chars().count(),
         _ => {
             let mut a_chars = a.chars();
             let mut b_chars = b.chars();
@@ -112,7 +112,9 @@ mod tests {
     }
 
     #[test]
-    fn unicode_test() {
+    fn unicode_glyphs_are_counted_as_one() {
+        assert_eq!(levenshtein_distance("😄", ""), 1);
+        assert_eq!(levenshtein_distance("", "😄"), 1);
         assert_eq!(levenshtein_distance("😄", "😦"), 1);
         assert_eq!(levenshtein_distance("😘", "😘"), 0);
     }
