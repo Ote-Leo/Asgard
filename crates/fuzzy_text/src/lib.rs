@@ -29,7 +29,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn empty_match_test() {
+    fn empty_cases_have_no_distance() {
         let a = "";
         let b = "";
         let output = 0;
@@ -74,13 +74,13 @@ mod tests {
 
 
     #[test]
-    fn case_sensitive_test() {
+    fn distance_is_case_sensitive() {
         assert_eq!(levenshtein_distance("DwAyNE", "DUANE"), 2);
         assert_eq!(levenshtein_distance("dwayne", "DuAnE"), 5);
     }
 
     #[test]
-    fn ordering_test() {
+    fn distance_is_the_same_in_either_directions() {
         let a = "aarrgh";
         let b = "aargh";
         let output = 1;
